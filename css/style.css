@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', 'sans-serif';
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(40, 40, 40);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 300px;
+    height: 500px;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(214, 255, 241);
+    padding: 20px;
+}
+
+.display{
+    text-align: center;
+    height: 50px;
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.mybtns {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+button{
+    height: 50px;
+    width: 110px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid rgb(214, 255, 241);
+    box-shadow: 2px 2px 10px rgb(214, 255, 241);
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(36, 36, 36);
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.output {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    height: 175px;
+    overflow: hidden; /* Hide both scrollbars initially */
+}
+
+.output::-webkit-scrollbar {
+    width: 0;  /* Minimal width for the scrollbar */
+    height: 0; /* Minimal height for the scrollbar */
+}
+
+.output:hover {
+    overflow-y: auto; /* Show vertical scrollbar on hover */
+}
+
+.output:hover::-webkit-scrollbar {
+    width: 5px;  /* Set a minimal width for the scrollbar when hovered */
+}
+
+.output:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.output:hover::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
